@@ -1,0 +1,60 @@
+/*搜索框*/
+.Y_search {
+    display: block;
+    width: 130px;
+    height: 36px;
+    border: none;
+    border-radius: 8px;
+    border: 1px solid #2489C5;
+    /* margin: 2px -110px 0 20px; */
+   float: right;
+}
+/*搜索按钮*/
+.Y_searchBtn {
+    display: block;
+    width: 72px;
+    height: 32px;
+    background: #2489C5;
+    /* margin-left: 117px; */
+    border-radius: 7px;
+    border: none;
+    float: right;
+}
+/*搜索表单*/
+.Y_search_btn {
+    width: 78%;
+    height: 30%;
+    /* background: darkgray; */
+    display: flex;
+    justify-content: flex-end;
+    direction: right;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 8px 0 8px;
+}
+#Y_search_form{width: 78%;height: 100%;}
+
+/*表格*/
+.sampleTable{width: 78%;text-align:center;border-collapse:collapse;border-spacing:1;border-spacing:0;margin: 7px;}
+.sampleTable_th{width: 100%;}
+.sampleTable_th tr th{border-top: 1px solid #2489C5;border-left: 1px solid #2489C5;border-bottom: 1px solid #2489C5;}
+.sampleTable_tbody tr td{border-bottom: 1px solid #2489C5;border-left: 1px solid #2489C5}
+.sampleTable_th tr th:nth-child(1){width: 8%;height: 30px;}
+.sampleTable_th tr th:nth-child(2){width: 20%;height: 30px;}
+.sampleTable_th tr th:nth-child(3){width: 20%;height: 30px;}
+.sampleTable_th tr th:nth-child(4){width: 8%;height: 30px;}
+.sampleTable_th tr th:nth-child(5){width: 8%;height: 30px;}
+.sampleTable_th tr th:nth-child(6){width: 8%;height: 30px;}
+.sampleTable_th tr th:nth-child(7){width: 18%;height: 30px;}
+.sampleTable_th tr th:nth-child(8){width: 10%;height: 30px;}
+.sampleTable_th tr th:last-child{border-right: 1px solid #2489C5;}
+.sampleTable_tbody tr td:last-child{border-right: 1px solid #2489C5;}
+.sampleTable_tbody tr td:nth-child(1){width: 8%;height: 30px;}
+.sampleTable_tbody tr td:nth-child(2){width: 20%;height: 30px;}
+.sampleTable_tbody tr td:nth-child(3){width: 20%;height: 30px;}
+.sampleTable_tbody tr td:nth-child(4){width: 8%;height: 30px;}
+.sampleTable_tbody tr td:nth-child(5){width: 8%;height: 30px;}
+.sampleTable_tbody tr td:nth-child(6){width: 8%;height: 30px;}
+.sampleTable_tbody tr td:nth-child(7){width: 18%;height: 30px;}
+.sampleTable_tbody tr td:nth-child(8){width: 10%;height: 30px;}
+

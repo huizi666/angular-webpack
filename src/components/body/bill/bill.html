@@ -1,0 +1,68 @@
+<div class="condition">
+	<form id="searchForm" action="	" method="get" 	>
+		<div class="customer">
+			<span class="choiceName">客&emsp;&emsp;户：</span>
+			<div class="">
+				<i>燕大</i><input type="checkbox" name="燕大" id="" value="yanda" />
+			</div>
+			<div class="">
+				<i>嘉宝</i><input type="checkbox" name="嘉宝" id="" value="jiabao" />
+			</div>
+			<div class="">
+				<i>达安</i><input type="checkbox" name="达安" id="" value="daan" />
+			</div>
+			<div class="">
+				<i>地坛</i><input type="checkbox" name="地坛" id="" value="ditan" />
+			</div>
+		</div>
+		<div class="pay">
+			<span  class="choiceName">是否支付：</span>
+			已支付<input type="radio" name="ispay" value="1">
+			未支付<input type="radio" name="ispay" value="0"/>
+		</div>
+		<div class="send">
+			<span  class="choiceName">是否发送：</span>
+			已发送<input type="radio" name="issend" value="1">
+			未发送<input type="radio" name="issend" value="0"/>
+		</div>
+		<div class="time">
+			<span  class="choiceName">时&emsp;&emsp;间：</span>
+				<div class="demo2">
+					<input placeholder="请输入日期" class="laydate-icon" onClick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss'})">
+				</div>
+			
+		</div>
+		<div class="form-btn">
+			<input class="formBtn" type="button" value="查询" click="return searchForm()" value="Submit"/>
+		</div>
+		<!--<input class="choiceName" type="button" id="" value="查看" />-->
+		
+	</form>
+
+</div>
+<div class="chart">
+	<table class="paymentTable" border="" cellspacing="" cellpadding="">
+		<thead class="paymentTable_th">
+			<tr >
+				<th>公司</th>
+				<th>月份</th>
+				<th>操作</th>
+			</tr>
+		</thead>
+		<tbody class="paymentTable_tbody" ><!--ng-repeat="bill in billList"-->
+			<tr>
+				<td>立菲达安<!--{{bill.company}}--></td>
+				<td>12月份</td>
+				<td><u>发送<!--{{bill.send | sendFilter}}--></u><u>支付</u><u>打印</u></td>
+			</tr>
+			<tr>
+				<td>立菲达安</td>
+				<td>12月份</td>
+				<td><u>发送</u><u>支付</u><u>打印</u></td>
+			</tr>
+
+		</tbody>
+	</table>
+	<!------------分页-------------->
+	<div class="pageTest pages"></div>
+</div>

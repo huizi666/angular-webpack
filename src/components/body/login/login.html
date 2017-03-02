@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登陆</title>
+		<link rel="shortcut icon" href="./favicon.ico" />  
+		<!-----第一行是几乎必需的 告诉浏览器去找哪个文件 shortcut 其实是为ie而加的--->
+		<link rel="icon" href="/favicon.ico" type="image/vnd.microsoft.icon" /> 
+        <!----第二行是给浏览器的备用图像,当第一个文件找不到或者怎样挂了时,第二行发挥作用,type的mime格式并不重要,不写type也没关系--->
+		<link rel="bookmark" href="/favicon.ico"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+		<script src="lib/js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/login/security.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/login/md5.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script src="js/tologin.js" type="text/javascript" charset="utf-8"></script>-->
+		<script src="js/login/login.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="log_container">
+			<h1>OMS登录</h1>
+			<form id='loginForm'  class="log"  method="post"  >
+				<!--用户名-->
+				<div class="nameError" >请输入用户名！</div>
+				<input class="uname" type="text" name="username" id="username" value="" autofocus="autofocus" placeholder="请输入用户名" />
+				<!--密码-->
+				<div class="pwdError" >请输入密码!</div>
+				<input class="upwd" type="password" name="password" id="password" value="" placeholder="请输入密码" />
+				<!--验证码-->
+				<div class="checkError" >请输入验证码！</div>
+				<input type="hidden" value="" >
+				<input class="ucheck" type="text" id="checkcode" value="" placeholder="请输入验证码" />
+				<!--登陆-->
+				<button class="log_btn"  value="登陆" id="submitButton" >登陆</button>
+				<!--记住密码，忘记密码-->
+				<div class=" myPass">
+					<div class="markPass">
+						<input type="checkbox" name="markPass" id="markPass" value=""  /><label for="markPass">记住密码</label>
+					</div>
+					<div class="findPass">
+						<a href="">忘记密码</a>
+					</div>
+				</div>
+				
+			</form>
+		</div>
+		
+	</body>
+</html>
