@@ -1,9 +1,13 @@
-require('./components/base/css/reset.css')
+require('./components/base/css/reset.css');
 
-//var _bill =  require('./compoents/body/bill/bill.js');
-function app(){
+var Bill =  require('./components/body/bill/bill.js');
+function App(){
 	console.log('dddd')
+	var dom = document.getElementById("dom")
+	var bill = new Bill()
+	dom.innerHTML = bill.tpl
+	
 }
 //调用函数
-new app()
+new App()
 

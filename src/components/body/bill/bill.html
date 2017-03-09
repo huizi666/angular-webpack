@@ -1,9 +1,10 @@
+
 <div class="condition">
 	<form id="searchForm" action="	" method="get" 	>
 		<div class="customer">
 			<span class="choiceName">客&emsp;&emsp;户：</span>
 			<div class="">
-				<i>燕大</i><input type="checkbox" name="燕大" id="" value="yanda" />
+				<i>燕大</i><input type="checkbox" name="燕大" id="" value="yanda" checked="checked"/>
 			</div>
 			<div class="">
 				<i>嘉宝</i><input type="checkbox" name="嘉宝" id="" value="jiabao" />
@@ -28,7 +29,8 @@
 		<div class="time">
 			<span  class="choiceName">时&emsp;&emsp;间：</span>
 				<div class="demo2">
-					<input placeholder="请输入日期" class="laydate-icon" onClick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss'})">
+				<input placeholder="请输入日期" id="datepicker" class="laydate-icon" onClick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss'})">
+						<input type="datetime-local" name="" id="" value="" placeholder="请输入日期" />
 				</div>
 			
 		</div>

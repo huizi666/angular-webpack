@@ -39,22 +39,8 @@
 .sampleTable_th{width: 100%;}
 .sampleTable_th tr th{border-top: 1px solid #2489C5;border-left: 1px solid #2489C5;border-bottom: 1px solid #2489C5;}
 .sampleTable_tbody tr td{border-bottom: 1px solid #2489C5;border-left: 1px solid #2489C5}
-.sampleTable_th tr th:nth-child(1){width: 8%;height: 30px;}
-.sampleTable_th tr th:nth-child(2){width: 20%;height: 30px;}
-.sampleTable_th tr th:nth-child(3){width: 20%;height: 30px;}
-.sampleTable_th tr th:nth-child(4){width: 8%;height: 30px;}
-.sampleTable_th tr th:nth-child(5){width: 8%;height: 30px;}
-.sampleTable_th tr th:nth-child(6){width: 8%;height: 30px;}
-.sampleTable_th tr th:nth-child(7){width: 18%;height: 30px;}
-.sampleTable_th tr th:nth-child(8){width: 10%;height: 30px;}
+.sampleTable_th tr th{padding:3px 5px 3px 5px}
 .sampleTable_th tr th:last-child{border-right: 1px solid #2489C5;}
 .sampleTable_tbody tr td:last-child{border-right: 1px solid #2489C5;}
-.sampleTable_tbody tr td:nth-child(1){width: 8%;height: 30px;}
-.sampleTable_tbody tr td:nth-child(2){width: 20%;height: 30px;}
-.sampleTable_tbody tr td:nth-child(3){width: 20%;height: 30px;}
-.sampleTable_tbody tr td:nth-child(4){width: 8%;height: 30px;}
-.sampleTable_tbody tr td:nth-child(5){width: 8%;height: 30px;}
-.sampleTable_tbody tr td:nth-child(6){width: 8%;height: 30px;}
-.sampleTable_tbody tr td:nth-child(7){width: 18%;height: 30px;}
-.sampleTable_tbody tr td:nth-child(8){width: 10%;height: 30px;}
+.sampleTable_tbody tr td{padding:3px 5px 3px 5px}
 
