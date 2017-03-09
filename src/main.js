@@ -17,7 +17,7 @@ require('./components/angular/service.js')
 require('./components/base/js/sildedown.js')
 //require('./components/lib/js/page.js')
 //require('./components/lib/js/date.js')
-/*require('./components/lib/js/datejs/laydate.js')
-require('./components/lib/js/datejs/need/laydate.css ')
-require('./components/lib/js/datejs/skins/default/laydate.css')*/
+//require('./components/lib/js/datejs')
+
+require('./components/lib/js/datejs/laydate.js')
 require('./components/base/js/common.js')

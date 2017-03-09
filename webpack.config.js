@@ -15,9 +15,9 @@ module.exports = {
 	},
 	output : {
 		path : './dist',
-		//filename : 'js/[name]-[chunkhash:8].bundle.js'
-		filename : 'js/[name].bundle.js',
-		//publicPath : './dist' //上线地址
+		filename : 'js/[name]-[chunkhash:8].bundle.js'
+		//filename : 'js/[name].bundle.js',
+		//publicPath : '/' //上线地址
 		
 	},
 	/*resolve: {
@@ -27,9 +27,11 @@ module.exports = {
 	},*/
 	 // webpack-dev-server的配置
 	 devServer: {
-		 historyApiFallback: true,
+	 	//contentBase: "./dist", //本地服务器所加载的页面所在的目录
+		//colors: true, //终端中输出结果为彩色
+		 historyApiFallback: true,//页面不跳转
 		 hot: true,
-		 inline: true,
+		 inline: true,//实时刷新
 		 progress: true,
 		 port: 4040,
 		 host: '127.0.0.1',
@@ -48,7 +50,7 @@ module.exports = {
 		{test:/\.js$/,loader:'babel-loader',exclude:path.resolve(__dirname,'node_modules'),
 		//绝对路径 只解析src下的提高打包性能
 		include:path.resolve(__dirname,'src')},
-		{test:/\.css$/,loader:ExtractTextPlugin.extract({ fallback: 'style-loader', use: 'css-loader!postcss-loader' })},
+		{test:/\.css$/,loader:ExtractTextPlugin.extract({ fallback: 'style-loader', use: 'css-loader?minimize!postcss-loader' })},//压缩css
 		 
 		{test:/\.scss$/,loader:'style-loader!css-loader!sass-loader'},
 		//{test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)$/,loader: 'file-loader'},
@@ -87,7 +89,7 @@ module.exports = {
 	      minChunks: 2,
 	    }),
 	    //单独打包css
-	    new ExtractTextPlugin("styles.css"),
+	    new ExtractTextPlugin("css/styles.css"),
 	   //清空文件夹
 	   new CleanWebpackPlugin(['dist'], {
 	        root: '', // An absolute path for the root  of webpack.config.js
