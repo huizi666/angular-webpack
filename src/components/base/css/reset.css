@@ -6,29 +6,7 @@
 	/*box-sizing: border-box;*/
 }
 input{outline: none;}
-body,
-ol,
-ul,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-th,
-tr,
-td,
-dl,
-dd,
-form,
-i,
-span,
-fieldset,
-legend,
-input,
-textarea,
-select {
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,tr,td,dl,dd,form,i,span,fieldset,legend,input,textarea,select {
 	margin: 0;
 	padding: 0
 }

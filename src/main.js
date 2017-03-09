@@ -1,4 +1,8 @@
-
+require('./components/base/css/reset.css')
+require('./components/lib/css/page.css')
+//require('./components/lib/js/datejs')
+require('./components/body/bill/zhangdan.css')
+require('./components/body/sample/yangbengenzong.css')
 
 require('./components/angular/application.js')
 require('./components/angular/config.js')

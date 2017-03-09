@@ -3,7 +3,7 @@ webpackJsonp([0],[
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(20);
+__webpack_require__(18);
 module.exports = 'ngResource';
 
 
@@ -4700,14 +4700,12 @@ angular.module('ui.router.state')
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(21);
+__webpack_require__(19);
 module.exports = angular;
 
 
 /***/ }),
-/* 4 */,
-/* 5 */,
-/* 6 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4720,7 +4718,7 @@ __webpack_require__(2);
 window.omsApp = angular.module("omsApp", ["ui.router", "ngResource"]);
 
 /***/ }),
-/* 7 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4729,17 +4727,17 @@ window.omsApp = angular.module("omsApp", ["ui.router", "ngResource"]);
 __webpack_require__(3);
 __webpack_require__(1);
 __webpack_require__(2);
-var billController = __webpack_require__(23);
-var billController = __webpack_require__(22);
-var bill = __webpack_require__(28);
+var billController = __webpack_require__(21);
+var billController = __webpack_require__(20);
+var bill = __webpack_require__(22);
 //var bill_crtl = require('../body/bill/')
-var sample = __webpack_require__(35);
-var query = __webpack_require__(34);
-var month = __webpack_require__(29);
-var month_app = __webpack_require__(30);
-var week = __webpack_require__(32);
-var week_app = __webpack_require__(33);
-var totle = __webpack_require__(31);
+var sample = __webpack_require__(29);
+var query = __webpack_require__(28);
+var month = __webpack_require__(23);
+var month_app = __webpack_require__(24);
+var week = __webpack_require__(26);
+var week_app = __webpack_require__(27);
+var totle = __webpack_require__(25);
 
 omsApp.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
 	//$qProvider.errorOnUnhandledRejections(false);
@@ -4795,7 +4793,7 @@ omsApp.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider,
 }]);
 
 /***/ }),
-/* 8 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4816,7 +4814,7 @@ omsApp.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider,
 })();
 
 /***/ }),
-/* 9 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4843,7 +4841,7 @@ omsApp.service("commonService", function ($http, $resource) {
 	});*/
 
 /***/ }),
-/* 10 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4891,7 +4889,7 @@ window.onload = function () {
 /*---------------------------------------------------------*/
 
 /***/ }),
-/* 11 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4907,15 +4905,35 @@ $('li.mainlevel').mouseleave(function () {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
+/* 10 */,
+/* 11 */,
 /* 12 */,
 /* 13 */,
-/* 14 */,
-/* 15 */,
-/* 16 */,
-/* 17 */,
-/* 18 */,
-/* 19 */,
-/* 20 */
+/* 14 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 15 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 16 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 17 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 18 */
 /***/ (function(module, exports) {
 
 /**
@@ -5770,7 +5788,7 @@ angular.module('ngResource', ['ng']).
 
 
 /***/ }),
-/* 21 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery) {/**
@@ -37544,7 +37562,7 @@ $provide.value("$locale", {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 22 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37620,7 +37638,7 @@ omsApp.controller("billController", ['billService', function ($http, $scope, $ro
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 23 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37662,82 +37680,84 @@ omsApp.service("billService", function ($http, $resource) {
 //  }
 
 /***/ }),
-/* 24 */,
-/* 25 */,
-/* 26 */,
-/* 27 */,
-/* 28 */
+/* 22 */
 /***/ (function(module, exports) {
 
 module.exports = "\r\n<div class=\"condition\">\r\n\t<form id=\"searchForm\" action=\"\t\" method=\"get\" \t>\r\n\t\t<div class=\"customer\">\r\n\t\t\t<span class=\"choiceName\">客&emsp;&emsp;户：</span>\r\n\t\t\t<div class=\"\">\r\n\t\t\t\t<i>燕大</i><input type=\"checkbox\" name=\"燕大\" id=\"\" value=\"yanda\" checked=\"checked\"/>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"\">\r\n\t\t\t\t<i>嘉宝</i><input type=\"checkbox\" name=\"嘉宝\" id=\"\" value=\"jiabao\" />\r\n\t\t\t</div>\r\n\t\t\t<div class=\"\">\r\n\t\t\t\t<i>达安</i><input type=\"checkbox\" name=\"达安\" id=\"\" value=\"daan\" />\r\n\t\t\t</div>\r\n\t\t\t<div class=\"\">\r\n\t\t\t\t<i>地坛</i><input type=\"checkbox\" name=\"地坛\" id=\"\" value=\"ditan\" />\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div class=\"pay\">\r\n\t\t\t<span  class=\"choiceName\">是否支付：</span>\r\n\t\t\t已支付<input type=\"radio\" name=\"ispay\" value=\"1\">\r\n\t\t\t未支付<input type=\"radio\" name=\"ispay\" value=\"0\"/>\r\n\t\t</div>\r\n\t\t<div class=\"send\">\r\n\t\t\t<span  class=\"choiceName\">是否发送：</span>\r\n\t\t\t已发送<input type=\"radio\" name=\"issend\" value=\"1\">\r\n\t\t\t未发送<input type=\"radio\" name=\"issend\" value=\"0\"/>\r\n\t\t</div>\r\n\t\t<div class=\"time\">\r\n\t\t\t<span  class=\"choiceName\">时&emsp;&emsp;间：</span>\r\n\t\t\t\t<div class=\"demo2\">\r\n\t\t\t\t<input placeholder=\"请输入日期\" id=\"datepicker\" class=\"laydate-icon\" onClick=\"laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss'})\">\r\n\t\t\t\t\t\t<input type=\"datetime-local\" name=\"\" id=\"\" value=\"\" placeholder=\"请输入日期\" />\r\n\t\t\t\t</div>\r\n\t\t\t\r\n\t\t</div>\r\n\t\t<div class=\"form-btn\">\r\n\t\t\t<input class=\"formBtn\" type=\"button\" value=\"查询\" click=\"return searchForm()\" value=\"Submit\"/>\r\n\t\t</div>\r\n\t\t<!--<input class=\"choiceName\" type=\"button\" id=\"\" value=\"查看\" />-->\r\n\t\t\r\n\t</form>\r\n\r\n</div>\r\n<div class=\"chart\">\r\n\t<table class=\"paymentTable\" border=\"\" cellspacing=\"\" cellpadding=\"\">\r\n\t\t<thead class=\"paymentTable_th\">\r\n\t\t\t<tr >\r\n\t\t\t\t<th>公司</th>\r\n\t\t\t\t<th>月份</th>\r\n\t\t\t\t<th>操作</th>\r\n\t\t\t</tr>\r\n\t\t</thead>\r\n\t\t<tbody class=\"paymentTable_tbody\" ><!--ng-repeat=\"bill in billList\"-->\r\n\t\t\t<tr>\r\n\t\t\t\t<td>立菲达安<!--{{bill.company}}--></td>\r\n\t\t\t\t<td>12月份</td>\r\n\t\t\t\t<td><u>发送<!--{{bill.send | sendFilter}}--></u><u>支付</u><u>打印</u></td>\r\n\t\t\t</tr>\r\n\t\t\t<tr>\r\n\t\t\t\t<td>立菲达安</td>\r\n\t\t\t\t<td>12月份</td>\r\n\t\t\t\t<td><u>发送</u><u>支付</u><u>打印</u></td>\r\n\t\t\t</tr>\r\n\r\n\t\t</tbody>\r\n\t</table>\r\n\t<!------------分页-------------->\r\n\t<div class=\"pageTest pages\"></div>\r\n</div>\r\n"
 
 /***/ }),
-/* 29 */
+/* 23 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"condition\" style=\"border: 1px solid solid;\">\r\n\t\r\n\t<div class=\"chart\">\r\n\t<table class=\"sampleTable\" border=\"\" cellspacing=\"\" cellpadding=\"\">\r\n\t\t<thead class=\"sampleTable_th\">\r\n\t\t\t<tr >\r\n\t\t\t\t<th>统计日期</th>\r\n\t\t\t\t<th>数据个数</th>\r\n\t\t\t\t<th>登录次数</th>\r\n\t\t\t\t<th>活跃用户</th>\r\n\t\t\t\t<th>数据大小GB</th>\r\n\t\t\t\t<th>活跃APP</th>\r\n\t\t\t\t<th>新增医院数量</th>\r\n\t\t\t\t<th>新增医院名称及所属大客户</th>\r\n\t\t\t\t<th>新增用户</th>\r\n\t\t\t</tr>\r\n\t\t</thead>\r\n\t\t<tbody class=\"sampleTable_tbody\">\r\n\t\t\t<tr >\r\n\t\t\t\t<td>2016-09</td>\r\n\t\t\t\t<td>1000</td>\r\n\t\t\t\t<td>2000</td>\r\n\t\t\t\t<td>200</td>\r\n\t\t\t\t<td>200</td>\r\n\t\t\t\t<td>13</td>\r\n\t\t\t\t<td>200</td>\r\n\t\t\t\t<td>13</td>\r\n\t\t\t\t<td>20</td>\r\n\t\t\t</tr>\r\n\t\t\t<tr >\r\n\t\t\t\t<td>2016-07</td>\r\n\t\t\t\t<td>1000</td>\r\n\t\t\t\t<td>2000</td>\r\n\t\t\t\t<td>200</td>\r\n\t\t\t\t<td>200</td>\r\n\t\t\t\t<td>13</td>\r\n\t\t\t\t<td>200</td>\r\n\t\t\t\t<td>13</td>\r\n\t\t\t\t<td>20</td>\r\n\t\t\t</tr>\r\n\t\t\t\r\n\t\t</tbody>\r\n\t</table>\r\n\t<!------------分页-------------->\r\n\t <div class=\"pageTest pages\"></div>\r\n</div>\r\n</div>\r\n\r\n\r\n"
 
 /***/ }),
-/* 30 */
+/* 24 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"condition\">\r\n\t<form id=\"searchForm\" action=\"\t\" method=\"get\" \t>\r\n\t\t<div class=\"customer\">\r\n\t\t\t<span class=\"choiceName\">客&emsp;&emsp;户：</span>\r\n\t\t\t<div class=\"\">\r\n\t\t\t\t<i>燕大</i><input type=\"checkbox\" name=\"燕大\" id=\"\" value=\"yanda\" />\r\n\t\t\t</div>\r\n\t\t\t<div class=\"\">\r\n\t\t\t\t<i>嘉宝</i><input type=\"checkbox\" name=\"嘉宝\" id=\"\" value=\"jiabao\" />\r\n\t\t\t</div>\r\n\t\t\t<div class=\"\">\r\n\t\t\t\t<i>达安</i><input type=\"checkbox\" name=\"达安\" id=\"\" value=\"daan\" />\r\n\t\t\t</div>\r\n\t\t\t<div class=\"\">\r\n\t\t\t\t<i>地坛</i><input type=\"checkbox\" name=\"地坛\" id=\"\" value=\"ditan\" />\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t\t<!--<input class=\"choiceName\" type=\"button\" id=\"\" value=\"查看\" />-->\r\n\t\t\r\n\t</form>\r\n\r\n</div>\r\n<div class=\"chart\">\r\n\t<table class=\"paymentTable\" border=\"\" cellspacing=\"\" cellpadding=\"\">\r\n\t\t<thead class=\"paymentTable_th\">\r\n\t\t\t<tr >\r\n\t\t\t\t<th>月份</th>\r\n\t\t\t\t<th>项目</th>\r\n\t\t\t\t<th>数据个数</th>\r\n\t\t\t\t<th>数据大小</th>\r\n\t\t\t</tr>\r\n\t\t</thead>\r\n\t\t<tbody class=\"paymentTable_tbody\" >\r\n\t\t\t<tr>\r\n\t\t\t\t<td>2016年10月</td>\r\n\t\t\t\t<td>百菌探</td>\r\n\t\t\t\t<td>200</td>\r\n\t\t\t\t<td>200</td>\r\n\t\t\t</tr>\r\n\t\t\t<tr>\r\n\t\t\t\t<td>2016年10月</td>\r\n\t\t\t\t<td>华木兰</td>\r\n\t\t\t\t<td>200</td>\r\n\t\t\t\t<td>200</td>\r\n\t\t\t</tr>\r\n\t\t\t<tr>\r\n\t\t\t\t<td>2016年10月</td>\r\n\t\t\t\t<td>合计</td>\r\n\t\t\t\t<td>200</td>\r\n\t\t\t\t<td>200</td>\r\n\t\t\t</tr>\r\n\t\t</tbody>\r\n\t</table>\r\n\t<!------------分页-------------->\r\n\t<div class=\"pageTest pages\"></div>\r\n</div>\r\n"
 
 /***/ }),
-/* 31 */
+/* 25 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"condition\" style=\"border: 1px solid solid;\">\r\n\t\r\n\t<div class=\"chart\">\r\n\t<table class=\"sampleTable\" border=\"\" cellspacing=\"\" cellpadding=\"\">\r\n\t\t<thead class=\"sampleTable_th\">\r\n\t\t\t<tr >\r\n\t\t\t\t<th>截止日期</th>\r\n\t\t\t\t<th>数据个数</th>\r\n\t\t\t\t<th>项目报告</th>\r\n\t\t\t\t<th>数据报告</th>\r\n\t\t\t\t<th>医院数量</th>\r\n\t\t\t\t<th>用户数量</th>\r\n\t\t\t\t<th>数据大小（TB）</th>\r\n\t\t\t</tr>\r\n\t\t</thead>\r\n\t\t<tbody class=\"sampleTable_tbody\">\r\n\t\t\t<tr >\r\n\t\t\t\t<td>截止上周</td>\r\n\t\t\t\t<td>1000</td>\r\n\t\t\t\t<td>2000</td>\r\n\t\t\t\t<td>2000</td>\r\n\t\t\t\t<td>200</td>\r\n\t\t\t\t<td>138</td>\r\n\t\t\t\t<td>200</td>\r\n\t\t\t</tr>\r\n\t\t\t<tr >\r\n\t\t\t\t<td>截止本周</td>\r\n\t\t\t\t<td>1000</td>\r\n\t\t\t\t<td>2000</td>\r\n\t\t\t\t<td>2000</td>\r\n\t\t\t\t<td>200</td>\r\n\t\t\t\t<td>138</td>\r\n\t\t\t\t<td>200</td>\r\n\t\t\t</tr>\r\n\t\t\t\r\n\t\t</tbody>\r\n\t</table>\r\n\t<!------------分页-------------->\r\n\t <div class=\"pageTest pages\"></div>\r\n</div>\r\n</div>\r\n\r\n\r\n"
 
 /***/ }),
-/* 32 */
+/* 26 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"condition\" style=\"border: 1px solid solid;\">\r\n\t\r\n\t<div class=\"chart\">\r\n\t<table class=\"sampleTable\" border=\"\" cellspacing=\"\" cellpadding=\"\">\r\n\t\t<thead class=\"sampleTable_th\">\r\n\t\t\t<tr >\r\n\t\t\t\t<th>统计日期</th>\r\n\t\t\t\t<th>数据个数</th>\r\n\t\t\t\t<th>登录次数</th>\r\n\t\t\t\t<th>活跃用户</th>\r\n\t\t\t\t<th>数据大小GB</th>\r\n\t\t\t\t<th>活跃APP</th>\r\n\t\t\t\t<th>APP运行次数</th>\r\n\t\t\t\t<th>新增医院</th>\r\n\t\t\t\t<th>新增用户</th>\r\n\t\t\t</tr>\r\n\t\t</thead>\r\n\t\t<tbody class=\"sampleTable_tbody\">\r\n\t\t\t<tr >\r\n\t\t\t\t<td>上周</td>\r\n\t\t\t\t<td>1000</td>\r\n\t\t\t\t<td>2000</td>\r\n\t\t\t\t<td>200</td>\r\n\t\t\t\t<td>200</td>\r\n\t\t\t\t<td>13</td>\r\n\t\t\t\t<td>200</td>\r\n\t\t\t\t<td>13</td>\r\n\t\t\t\t<td>20</td>\r\n\t\t\t</tr>\r\n\t\t\t<tr >\r\n\t\t\t\t<td>本周</td>\r\n\t\t\t\t<td>1000</td>\r\n\t\t\t\t<td>2000</td>\r\n\t\t\t\t<td>200</td>\r\n\t\t\t\t<td>200</td>\r\n\t\t\t\t<td>13</td>\r\n\t\t\t\t<td>200</td>\r\n\t\t\t\t<td>13</td>\r\n\t\t\t\t<td>20</td>\r\n\t\t\t</tr>\r\n\t\t\t\r\n\t\t</tbody>\r\n\t</table>\r\n\t<!------------分页-------------->\r\n\t <div class=\"pageTest pages\"></div>\r\n</div>\r\n</div>\r\n\r\n\r\n"
 
 /***/ }),
-/* 33 */
+/* 27 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"condition\">\r\n\t<form id=\"searchForm\" action=\"\t\" method=\"get\" \t>\r\n\t\t<div class=\"customer\">\r\n\t\t\t<span class=\"choiceName\">客&emsp;&emsp;户：</span>\r\n\t\t\t<div class=\"\">\r\n\t\t\t\t<i>燕大</i><input type=\"checkbox\" name=\"燕大\" id=\"\" value=\"yanda\" />\r\n\t\t\t</div>\r\n\t\t\t<div class=\"\">\r\n\t\t\t\t<i>嘉宝</i><input type=\"checkbox\" name=\"嘉宝\" id=\"\" value=\"jiabao\" />\r\n\t\t\t</div>\r\n\t\t\t<div class=\"\">\r\n\t\t\t\t<i>达安</i><input type=\"checkbox\" name=\"达安\" id=\"\" value=\"daan\" />\r\n\t\t\t</div>\r\n\t\t\t<div class=\"\">\r\n\t\t\t\t<i>地坛</i><input type=\"checkbox\" name=\"地坛\" id=\"\" value=\"ditan\" />\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t\t<!--<input class=\"choiceName\" type=\"button\" id=\"\" value=\"查看\" />-->\r\n\t\t\r\n\t</form>\r\n\r\n</div>\r\n<div class=\"chart\">\r\n\t<table class=\"paymentTable\" border=\"\" cellspacing=\"\" cellpadding=\"\">\r\n\t\t<thead class=\"paymentTable_th\">\r\n\t\t\t<tr >\r\n\t\t\t\t<th>公司</th>\r\n\t\t\t\t<th>月份</th>\r\n\t\t\t\t<th>操作</th>\r\n\t\t\t\t<th>月份</th>\r\n\t\t\t\t<th>操作</th>\r\n\t\t\t</tr>\r\n\t\t</thead>\r\n\t\t<tbody class=\"paymentTable_tbody\" >\r\n\t\t\t<tr>\r\n\t\t\t\t<td>APP</td>\r\n\t\t\t\t<td>数据个数</td>\r\n\t\t\t\t<td>数据大小</td>\r\n\t\t\t\t<td>数据个数</td>\r\n\t\t\t\t<td>数据大小</td>\r\n\t\t\t</tr>\r\n\t\t\t<tr>\r\n\t\t\t\t<td>百菌探</td>\r\n\t\t\t\t<td>200</td>\r\n\t\t\t\t<td>200</td>\r\n\t\t\t\t<td>500</td>\r\n\t\t\t\t<td>400</td>\r\n\t\t\t</tr>\r\n\t\t\t<tr>\r\n\t\t\t\t<td>华木兰</td>\r\n\t\t\t\t<td>200</td>\r\n\t\t\t\t<td>200</td>\r\n\t\t\t\t<td>500</td>\r\n\t\t\t\t<td>400</td>\r\n\t\t\t</tr>\r\n\t\t\t<tr>\r\n\t\t\t\t<td>合计</td>\r\n\t\t\t\t<td>200</td>\r\n\t\t\t\t<td>200</td>\r\n\t\t\t\t<td>500</td>\r\n\t\t\t\t<td>400</td>\r\n\t\t\t</tr>\r\n\r\n\t\t</tbody>\r\n\t</table>\r\n\t<!------------分页-------------->\r\n\t<div class=\"pageTest pages\"></div>\r\n</div>\r\n"
 
 /***/ }),
-/* 34 */
+/* 28 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"condition\" style=\"border: 1px solid skyblue;\">\r\n\t<form id=\"Y_search_form\" action=\"\" method=\"post\">\t\r\n\t\t<div class=\"Y_search_btn\">\r\n\t\t\t<input class=\"Y_search\" type=\"search\" name=\"\" required=\"\" placeholder=\"订单号、样本编号\" x-webkit-speech=\"\" x-webkit-grammar=\"builtin:search\" lang=\"zh-CN\">\r\n\t\t\t<input class=\"Y_searchBtn\" type=\"submit\" value=\"查询\"/>\r\n\t\t</div>\r\n\t\t<!--<input class=\"choiceName\" type=\"button\" id=\"\" value=\"查看\" />-->\r\n\t</form>\r\n\t<div class=\"chart\">\r\n\t<table class=\"sampleTable\" border=\"\" cellspacing=\"\" cellpadding=\"\">\r\n\t\t<thead class=\"sampleTable_th\">\r\n\t\t\t<tr >\r\n\t\t\t\t<th>用户</th>\r\n\t\t\t\t<th>上传日期</th>\r\n\t\t\t\t<th>datakey</th>\r\n\t\t\t\t<th>APP</th>\r\n\t\t\t\t<th>文件名称</th>\r\n\t\t\t\t<th>projectName</th>\r\n\t\t\t\t<th>sampleName</th>\r\n\t\t\t\t<th>操作</th>\r\n\t\t\t</tr>\r\n\t\t</thead>\r\n\t\t<tbody class=\"sampleTable_tbody\">\r\n\t\t\t<tr >\r\n\t\t\t\t<td>linyc</td>\r\n\t\t\t\t<td>2016-01-01 01:01:01</td>\r\n\t\t\t\t<td>20160101</td>\r\n\t\t\t\t<td>PGS</td>\r\n\t\t\t\t<td>a.bam</td>\r\n\t\t\t\t<td>1389</td>\r\n\t\t\t\t<td>C0151</td>\r\n\t\t\t\t<td>查看报告</td>\r\n\t\t\t</tr>\r\n\t\t\t<tr >\r\n\t\t\t\t<td>linyc</td>\r\n\t\t\t\t<td>2016-01-01 01:01:01</td>\r\n\t\t\t\t<td>20160101</td>\r\n\t\t\t\t<td>PGS</td>\r\n\t\t\t\t<td>a.bam</td>\r\n\t\t\t\t<td>1389</td>\r\n\t\t\t\t<td>C0151</td>\r\n\t\t\t\t<td>查看报告</td>\r\n\t\t\t</tr>\r\n\t\t\t\r\n\t\t</tbody>\r\n\t</table>\r\n\t<!------------分页-------------->\r\n\t <div class=\"pageTest pages\"></div>\r\n</div>\r\n</div>\r\n\r\n\r\n"
 
 /***/ }),
-/* 35 */
+/* 29 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"condition\" style=\"border: 1px solid solid;\">\r\n\t<form id=\"Y_search_form\" action=\"\" method=\"post\">\t\r\n\t\t<div class=\"Y_search_btn\">\r\n\t\t\t<input class=\"Y_search\" type=\"search\" name=\"\" required=\"\" placeholder=\"订单号、样本编号\" x-webkit-speech=\"\" x-webkit-grammar=\"builtin:search\" lang=\"zh-CN\">\r\n\t\t\t<input class=\"Y_searchBtn\" type=\"submit\" value=\"查询\"/>\r\n\t\t</div>\r\n\t\t<!--<input class=\"choiceName\" type=\"button\" id=\"\" value=\"查看\" />-->\r\n\t</form>\r\n\t<div class=\"chart\">\r\n\t<table class=\"sampleTable\" border=\"\" cellspacing=\"\" cellpadding=\"\">\r\n\t\t<thead class=\"sampleTable_th\">\r\n\t\t\t<tr >\r\n\t\t\t\t<th>下单人</th>\r\n\t\t\t\t<th>下单时间</th>\r\n\t\t\t\t<th>订单号</th>\r\n\t\t\t\t<th>样本编号</th>\r\n\t\t\t\t<th>检测项目</th>\r\n\t\t\t\t<th>样本类型</th>\r\n\t\t\t\t<th>更新时间</th>\r\n\t\t\t\t<th>状态</th>\r\n\t\t\t</tr>\r\n\t\t</thead>\r\n\t\t<tbody class=\"sampleTable_tbody\">\r\n\t\t\t<tr >\r\n\t\t\t\t<td>xiawt</td>\r\n\t\t\t\t<td>2016-12-01 15:08:09</td>\r\n\t\t\t\t<td>20161100001301</td>\r\n\t\t\t\t<td>BL20</td>\r\n\t\t\t\t<td>百菌探</td>\r\n\t\t\t\t<td>组织液</td>\r\n\t\t\t\t<td>2016-11-30 14:46:03</td>\r\n\t\t\t\t<td>等待上机</td>\r\n\t\t\t</tr>\r\n\t\t\r\n\t\t\t\r\n\t\t</tbody>\r\n\t</table>\r\n\t<!------------分页-------------->\r\n\t <div class=\"pageTest pages\"></div>\r\n</div>\r\n</div>\r\n\r\n\r\n"
 
 /***/ }),
-/* 36 */,
-/* 37 */
+/* 30 */,
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
+__webpack_require__(14);
+__webpack_require__(17);
+//require('./components/lib/js/datejs')
+__webpack_require__(15);
+__webpack_require__(16);
+
+__webpack_require__(4);
+__webpack_require__(5);
 __webpack_require__(6);
 __webpack_require__(7);
-__webpack_require__(8);
-__webpack_require__(9);
 //require('./components/body/bill/bill_service.js')
 //require('./components/angular/filter.js')
 //require('./components/body/bill/bill_serveice.js')
 //require('./components/body/bill/bill_crtl.js')
 
 
-__webpack_require__(11);
+__webpack_require__(9);
 //require('./components/lib/js/page.js')
 //require('./components/lib/js/date.js')
 /*require('./components/lib/js/datejs/laydate.js')
 require('./components/lib/js/datejs/need/laydate.css ')
 require('./components/lib/js/datejs/skins/default/laydate.css')*/
-__webpack_require__(10);
+__webpack_require__(8);
 
 /***/ })
-],[37]);
+],[31]);

@@ -3,6 +3,7 @@ var webpack = require('webpack');
 var path  = require('path');
 var htmlWebpackPlugin = require('html-webpack-plugin');
 var CleanWebpackPlugin = require('clean-webpack-plugin');
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
 module.exports = {
 	context : __dirname,
 	entry : {
@@ -10,7 +11,6 @@ module.exports = {
 		main : './src/js/main.js'
 		app : './src/app.js',*/
 		vender : './src/vender.js',
-		style : './src/style.js',
 		main : './src/main.js'
 	},
 	output : {
@@ -18,7 +18,13 @@ module.exports = {
 		//filename : 'js/[name]-[chunkhash:8].bundle.js'
 		filename : 'js/[name].bundle.js',
 		//publicPath : './dist' //上线地址
+		
 	},
+	/*resolve: {
+	  alias: {//定义引用路径 import b from '~/components/b'
+	    '~':resolve(__dirname, 'src')
+	  }
+	},*/
 	 // webpack-dev-server的配置
 	 devServer: {
 		 historyApiFallback: true,
@@ -29,7 +35,7 @@ module.exports = {
 		 host: '127.0.0.1',
 		 proxy: {
 		 '*': {
-			 target: 'http://localhost',
+			 target: '',
 			 changeOrigin: true,
 			 secure: false
 		 }
@@ -42,14 +48,17 @@ module.exports = {
 		{test:/\.js$/,loader:'babel-loader',exclude:path.resolve(__dirname,'node_modules'),
 		//绝对路径 只解析src下的提高打包性能
 		include:path.resolve(__dirname,'src')},
-		{test:/\.css$/,loader:'style-loader!css-loader'},
-		{test:/\.scss$/,loader:'style-loader!css-loader!postcss-loader!sass-loader'},
+		{test:/\.css$/,loader:ExtractTextPlugin.extract({ fallback: 'style-loader', use: 'css-loader!postcss-loader' })},
+		 
+		{test:/\.scss$/,loader:'style-loader!css-loader!sass-loader'},
 		//{test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)$/,loader: 'file-loader'},
 		{test: /\.(png|jpg|jpg|ttf|eot|woff|woff2|svg)$/, loader: 'url-loader?limit=8192&name=images/[hash:8].[name].[ext]'},
 		{test: /\.json$/,loader: 'json-loader'}
 		]
 	},
+	
 	plugins : [
+	
 		//require('autoprefixer')(),//创建浏览器规则,
 		new htmlWebpackPlugin({
 			template: './src/index.html',
@@ -77,11 +86,14 @@ module.exports = {
 	      filename: "js/[name].bundle.js",
 	      minChunks: 2,
 	    }),
+	    //单独打包css
+	    new ExtractTextPlugin("styles.css"),
 	   //清空文件夹
 	   new CleanWebpackPlugin(['dist'], {
 	        root: '', // An absolute path for the root  of webpack.config.js
 	        verbose: true,// Write logs to console.
 	        dry: false // Do not delete anything, good for testing.
 	    }),
+	    
 		]
 }
