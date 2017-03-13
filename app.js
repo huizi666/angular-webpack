@@ -9,7 +9,7 @@ var myJson = require('./json.js')[0];
 console.log(myJson)
 
 http.createServer(function(request, response) {	
-	response.setHeader('Access-Control-Allow-Origin','127.0.0.1:5050')
+	response.setHeader('Access-Control-Allow-Origin','*')
 	response.writeHead('200', {
 		"Content-Type": "json;charestset=utf-8;"
 	});
@@ -19,5 +19,5 @@ http.createServer(function(request, response) {
 	response.write(s)
 	response.end();
 
-}).listen(5050)
-console.log("my server is strated port is 5050")
+}).listen(5000)
+console.log("my server is strated port is 5000")

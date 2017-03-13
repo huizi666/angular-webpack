@@ -1,6 +1,7 @@
 require('angular')
 require('angular-resource')
 require('angular-ui-router')
+var omsApp = require('./application.js');
 var BillController = require('./bill_service.js')
 var BillController = require('./bill_crtl.js')
 var bill = require('../body/bill/bill.html')

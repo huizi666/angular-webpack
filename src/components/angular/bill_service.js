@@ -1,8 +1,9 @@
-require('jquery')
-require('angular')
+var jquery = require('jquery')
+var angular = require('angular')
+var omsApp = require('./application.js');
 require('angular-resource')
 	var webService_bill = 'http://127.0.0.1:5050'
-	omsApp.service("billService", function($http,$resource) {
+	var billService = omsApp.service("billService", function($http,$resource) {
 		$http.get(webService_bill).success(function(response){
 		console.log($response)
 		})

@@ -1,5 +1,5 @@
-require('jquery')
-require('angular')
+var juqery = require('jquery')
+var angualr = require('angular')
 require('angular-resource')
 require('angular-ui-router')
 console.log('this is vender')

@@ -3,13 +3,13 @@ require('angular')
 require('angular-resource')
 var omsApp = require('./application.js');
 var billService = require('./bill_service.js');
-	var webService_bill = 'http://127.0.0.1:5050'
+	var webService_bill = 'http://127.0.0.1:5000'
 	//console.log('./omsApp')
-	omsApp.controller("BillController",['$routeParams','$http','$scope','$rootScope',function($http,$scope,$rootScope,$routeParams) {
+	omsApp.controller("BillController",['$http','$scope','$rootScope',function($http,$scope,$rootScope) {
 		console.log('this is bill_crtl')
 		console.log($("input:checkbox:checked").val())
 		console.log(webService_bill)
-		/*$http({
+		$http({
 			url:webService_bill,
 			method:'GET',
 			headers:{'Content-Type':'application/x-www-form-urlencoded'}
@@ -19,17 +19,17 @@ var billService = require('./bill_service.js');
 			}).error(function(data,header,config,status){
 			//处理响应失败
 			console.log('shibai失败')
-		});*/
+		});
 		//date----searchDate:g关键字避免污染混淆
 		//var bill_service = "http://127.0.0.1:5000"
-		$.ajax({
+		/*$.ajax({
 			type:"get",
 			url:webService_bill,
 			async:true,
 			success:function(data){
 				console.log(data)
 			}
-		});
+		});*/
 		
 		
 		
