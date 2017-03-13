@@ -3,58 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>OMS后台管理系统</title>
-</head>
+</head>  
 <body ng-app="omsApp">
-
-    	<!-----------head开始------------>
-    	<header class="header ">
-    		<a ui-sref="bill"><h1 class="logo"><img src="components/base/img/logo.png"/></h1></a>
-    		<div class="logway"><a href="../src/components/body/login/login.html"><img src="components/base/img/login.png"/></a></div>
-    	</header>
+	<!-----------head开始------------>
+	<header class="header ">
+		<a ui-sref="bill"><h1 class="logo"><img src="components/base/img/logo.png"/></h1></a>
+		<div class="logway"><a href="../src/components/body/login/login.html"><img src="components/base/img/login.png"/></a></div>
+	</header>
+	<!-----------head结束------------>
+	
+   <div id="container" > 
+    	<!-----------nav开始------------>
+    	<nav class="nav ">
+    		<ul id="nav">
+    			<li class="mainlevel" id="mainlevel_03"><a ui-sref="bill">账单管理</a></li>
+			    <li class="mainlevel" id="mainlevel_04"><a ui-sref="sample">样本跟踪</a></li>  
+			    <li class="mainlevel" id="mainlevel_05"><a ui-sref="query">报告查询</a></li>  
+			    <li class="mainlevel" id="mainlevel_06"><a >运营统计</a>
+			    <ul id="sub_06">
+				    <li><a ui-sref="totle">总量统计</a></li>
+				    <li><a ui-sref="week_app">周APP统计</a></li>
+				    <li><a ui-sref="week">周统计</a></li>
+				    <li><a ui-sref="month_app">月APP统计</a></li>
+				    <li><a ui-sref="month">月统计</a></li>
+			    </ul>
+			    </li>
+			</ul>
+    	</nav>
+    	<!-----------nav结束------------>
     	
-    	<!-----------head结束------------>
-    	
-	   <div id="container" > 
-	    	<!-----------nav开始------------>
-	    	<nav class="nav ">
-	    		<ul id="nav">
-	    			<li class="mainlevel" id="mainlevel_03"><a ui-sref="bill">账单管理</a>
-    
-				    </li>
-				    
-				    <li class="mainlevel" id="mainlevel_04"><a ui-sref="sample">样本跟踪2</a>
-				    
-				    </li>
-				    
-				    <li class="mainlevel" id="mainlevel_05"><a ui-sref="query">报告查询3</a>
-				   
-				    </li>
-				    
-				    <li class="mainlevel" id="mainlevel_06"><a >运营统计4</a>
-				    <ul id="sub_06">
-					    <li><a ui-sref="totle">总量统计</a></li>
-					    <li><a ui-sref="week_app">周APP统计</a></li>
-					    <li><a ui-sref="week">周统计</a></li>
-					    <li><a ui-sref="month_app">月APP统计</a></li>
-					    <li><a ui-sref="month">月统计</a></li>
-				    </ul>
-				    </li>
-				
-				</ul>
-	    	</nav>
-	    	<!-----------nav结束------------>
-	    	
-	    	<!-----------artilce开始------------>
-	    	<article class="artilce" ui-view>
-	    		
-	    		
-	    	</article>
-	    	<!-----------article结束------------>
-	   </div>
-	   
-    	<!-----------footer开始------------>
-    	<!--<footer class="footer"></footer>-->
-    	<!-----------footer结束------------>
-
+    	<!-----------artilce开始------------>
+    	<article class="artilce" ui-view>
+    		
+    	</article>
+    	<!-----------article结束------------>
+   </div> 
+	<!-----------footer开始------------>
+	<!--<footer class="footer"></footer>-->
+	<!-----------footer结束------------>
 </body>
 </html>

@@ -1,8 +1,8 @@
 require('angular')
 require('angular-resource')
 require('angular-ui-router')
-var billController = require('../body/bill/bill_service.js')
-var billController = require('../body/bill/bill_crtl.js')
+var BillController = require('./bill_service.js')
+var BillController = require('./bill_crtl.js')
 var bill = require('../body/bill/bill.html')
 //var bill_crtl = require('../body/bill/')
 var sample = require('../body/sample/sample.html')
@@ -22,56 +22,56 @@ var totle = require('../body/operation/totle.html')
 	            url:'/',
 	            cache:'false',
 	            template: bill,
-	            service:'billService',
-	            controller: 'billController'
+	            //service:'BillController',
+	            controller: 'BillController'
 	        })
 	        .state('bill', {
 	            url:'/bill',
 	            cache:'false',
 	            template: bill,
-	            controller: 'billController'
+	            controller: 'BillController'
 	        })
 	        .state('sample', {
 	            url:'/sample',
 	            cache:'false',
 	            template: sample,
-	            controller: 'billController'
+	            controller: 'BillController'
 	        })
 	         .state('query', {
 	            url:'/query',
 	            cache:'false',
 	            template: query,
-	            controller: 'billController'
+	            controller: 'BillController'
 	        })
 	         .state('month', {
 	            url:'/month',
 	            cache:'false',
 	            template: month,
-	            controller: 'billController'
+	            controller: 'BillController'
 	        })
 	         .state('month_app', {
 	            url:'/month_app',
 	            cache:'false',
 	            template: month_app,
-	            controller: 'billController'
+	            controller: 'BillController'
 	        })
 	         .state('week', {
 	            url:'/week',
 	            cache:'false',
 	            template: week,
-	            controller: 'billController'
+	            controller: 'BillController'
 	        })
 	         .state('week_app', {
 	            url:'/week_app',
 	            cache:'false',
 	            template: week_app,
-	            controller: 'billController'
+	            controller: 'BillController'
 	        })
 	          .state('totle', {
 	            url:'/totle',
 	            cache:'false',
 	            template: totle,
-	            controller: 'billController'
+	            controller: 'BillController'
 	        })
 	
 	}]);

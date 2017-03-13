@@ -1,6 +1,5 @@
-var jquery = require('jquery');
-require('./components/lib/js/jquery.js')
-require('./components/lib/js/angular.min.js')
-require('./components/lib/js/angular-ui-router.min.js')
-require('./components/lib/js/angular-resource.min.js')
+require('jquery')
+require('angular')
+require('angular-resource')
+require('angular-ui-router')
 console.log('this is vender')

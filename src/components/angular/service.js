@@ -2,7 +2,7 @@ require('angular')
 require('angular-resource')
 require('angular-ui-router')
 omsApp.service("commonService",function($http,$resource){
-	var webService_bill = 'http://127.0.0.1:4040';
+	var webService_bill = 'http://127.0.0.1:5050';
 	console.log(11111111111111)
 
 });

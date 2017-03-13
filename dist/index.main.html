@@ -3,58 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>OMS后台管理系统</title>
-<link rel="shortcut icon" href="favico.ico.ico"><link href="css/styles.css" rel="stylesheet"></head>
+<link rel="shortcut icon" href="favico.ico.ico"><link href="css/styles.css" rel="stylesheet"></head>  
 <body ng-app="omsApp">
-
-    	<!-----------head开始------------>
-    	<header class="header">
-    		<a ui-sref="bill"><h1 class="logo"><img src="images/b4d337af.logo.png"></h1></a>
-    		<div class="logway"><a href="../src/components/body/login/login.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAXCAIAAACAiijJAAACOElEQVQ4Ea1UTWgTQRSe2Z8kuybZxm5Lm5Qitj2oWJUgiCgee6sXQU+CqAfPHguKIHgqFARPQkFEsCdBQbx4NAezPTWmWqlI66UmIbtds7tJdsZdG97sT1hQ3NM3733vm/dmvllMKdU0DYW/crkcDqAEDheh/sPyP0gIkW23cfcFr9dqr7uEHJPyd9S5xZGpCCeyxNVqFSav/Gpc/1ZxqBskXXXz11wFOJCC02GDuJTe3V2P1HsFa7zxHfegMg6YxHqntdvtxBkUoQ/ckDgwmcRe34ZoBDRwaLRIlklMilIkB8sxygOOAyZxWi7MpLNxBo/xBVeOxyGCg+78irv3hD0Le+Oz7/7kyZvqDJw/JOCOQr6Ypanl/sQar9fT5I8vFM8Xl3LjUDYUhCTq2P7I2X2ETkmFA/YrfWfTMS4rSe4aSJiIrAgtjbMG+xjBW9ypmD9vI3GDs8tE2sSOd7oqYnv7qI/oQ7HxGTtD+/SCC/niM33rLWeOUaGJ3SIVHvcmgOzfyDveTKi/UpheHCl51pARd4akvRYsTFqIOcV/I0t545Otg2oEPOqNPxf0GnYeFOdvjB6t28bC1vsU5l46pQOm38UXZz9SFlyamMyTTBrzNatNEN2w2l72YpZdEzuVYFkQPxXaSz01c3h0tbn9Rv/RIe4JSVk9ck5rDv51fhdPps+eP6SWRDnLDVHcR8SbYi6Ty/HiLXV2KiUfzyjBPUL/C0gkeDHOYW8Ecn8LQm8EisH/EEno6zfgh9jZCahJZAAAAABJRU5ErkJggg=="></a></div>
-    	</header>
+	<!-----------head开始------------>
+	<header class="header">
+		<a ui-sref="bill"><h1 class="logo"><img src="images/logo.b4d337af.png"></h1></a>
+		<div class="logway"><a href="../src/components/body/login/login.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAXCAIAAACAiijJAAACOElEQVQ4Ea1UTWgTQRSe2Z8kuybZxm5Lm5Qitj2oWJUgiCgee6sXQU+CqAfPHguKIHgqFARPQkFEsCdBQbx4NAezPTWmWqlI66UmIbtds7tJdsZdG97sT1hQ3NM3733vm/dmvllMKdU0DYW/crkcDqAEDheh/sPyP0gIkW23cfcFr9dqr7uEHJPyd9S5xZGpCCeyxNVqFSav/Gpc/1ZxqBskXXXz11wFOJCC02GDuJTe3V2P1HsFa7zxHfegMg6YxHqntdvtxBkUoQ/ckDgwmcRe34ZoBDRwaLRIlklMilIkB8sxygOOAyZxWi7MpLNxBo/xBVeOxyGCg+78irv3hD0Le+Oz7/7kyZvqDJw/JOCOQr6Ypanl/sQar9fT5I8vFM8Xl3LjUDYUhCTq2P7I2X2ETkmFA/YrfWfTMS4rSe4aSJiIrAgtjbMG+xjBW9ypmD9vI3GDs8tE2sSOd7oqYnv7qI/oQ7HxGTtD+/SCC/niM33rLWeOUaGJ3SIVHvcmgOzfyDveTKi/UpheHCl51pARd4akvRYsTFqIOcV/I0t545Otg2oEPOqNPxf0GnYeFOdvjB6t28bC1vsU5l46pQOm38UXZz9SFlyamMyTTBrzNatNEN2w2l72YpZdEzuVYFkQPxXaSz01c3h0tbn9Rv/RIe4JSVk9ck5rDv51fhdPps+eP6SWRDnLDVHcR8SbYi6Ty/HiLXV2KiUfzyjBPUL/C0gkeDHOYW8Ecn8LQm8EisH/EEno6zfgh9jZCahJZAAAAABJRU5ErkJggg=="></a></div>
+	</header>
+	<!-----------head结束------------>
+	
+   <div id="container"> 
+    	<!-----------nav开始------------>
+    	<nav class="nav">
+    		<ul id="nav">
+    			<li class="mainlevel" id="mainlevel_03"><a ui-sref="bill">账单管理</a></li>
+			    <li class="mainlevel" id="mainlevel_04"><a ui-sref="sample">样本跟踪</a></li>  
+			    <li class="mainlevel" id="mainlevel_05"><a ui-sref="query">报告查询</a></li>  
+			    <li class="mainlevel" id="mainlevel_06"><a>运营统计</a>
+			    <ul id="sub_06">
+				    <li><a ui-sref="totle">总量统计</a></li>
+				    <li><a ui-sref="week_app">周APP统计</a></li>
+				    <li><a ui-sref="week">周统计</a></li>
+				    <li><a ui-sref="month_app">月APP统计</a></li>
+				    <li><a ui-sref="month">月统计</a></li>
+			    </ul>
+			    </li>
+			</ul>
+    	</nav>
+    	<!-----------nav结束------------>
     	
-    	<!-----------head结束------------>
-    	
-	   <div id="container"> 
-	    	<!-----------nav开始------------>
-	    	<nav class="nav">
-	    		<ul id="nav">
-	    			<li class="mainlevel" id="mainlevel_03"><a ui-sref="bill">账单管理</a>
-    
-				    </li>
-				    
-				    <li class="mainlevel" id="mainlevel_04"><a ui-sref="sample">样本跟踪2</a>
-				    
-				    </li>
-				    
-				    <li class="mainlevel" id="mainlevel_05"><a ui-sref="query">报告查询3</a>
-				   
-				    </li>
-				    
-				    <li class="mainlevel" id="mainlevel_06"><a>运营统计4</a>
-				    <ul id="sub_06">
-					    <li><a ui-sref="totle">总量统计</a></li>
-					    <li><a ui-sref="week_app">周APP统计</a></li>
-					    <li><a ui-sref="week">周统计</a></li>
-					    <li><a ui-sref="month_app">月APP统计</a></li>
-					    <li><a ui-sref="month">月统计</a></li>
-				    </ul>
-				    </li>
-				
-				</ul>
-	    	</nav>
-	    	<!-----------nav结束------------>
-	    	
-	    	<!-----------artilce开始------------>
-	    	<article class="artilce" ui-view>
-	    		
-	    		
-	    	</article>
-	    	<!-----------article结束------------>
-	   </div>
-	   
-    	<!-----------footer开始------------>
-    	<!--<footer class="footer"></footer>-->
-    	<!-----------footer结束------------>
-
-<script type="text/javascript" src="js/vender.bundle.js"></script><script type="text/javascript" src="js/main-0156aa1d.bundle.js"></script></body>
+    	<!-----------artilce开始------------>
+    	<article class="artilce" ui-view>
+    		
+    	</article>
+    	<!-----------article结束------------>
+   </div> 
+	<!-----------footer开始------------>
+	<!--<footer class="footer"></footer>-->
+	<!-----------footer结束------------>
+<script type="text/javascript" src="js/vender.bundle.js"></script><script type="text/javascript" src="js/main-8b395bcd.bundle.js"></script><script type="text/javascript" src="js/styles-cfb4175b.bundle.js"></script></body>
 </html>

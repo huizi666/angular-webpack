@@ -19,6 +19,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --hot --inline",
+    "build": "webpack  --profile --progress --colors --display-error-details",
+    "devhot": "webpack-dev-server --config",
     "dev": "webpack --config webpack.config.js  --progress --display-modules --profile  --colors --display-error-details "
   },
   "author": "huizi666",
