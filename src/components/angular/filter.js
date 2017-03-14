@@ -1,4 +1,4 @@
-(function(){
+var omsApp = require('./application.js');
   omsApp.filter("activeFilter",function(){
     return function(active){
       return active ? "active":"";
@@ -10,4 +10,3 @@
       return send==0 ? "发送":"已发送";
     }
   });
-})();
